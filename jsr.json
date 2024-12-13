@@ -1,5 +1,5 @@
 {
-  "name": "__package_name__",
+  "name": "@rebeccastevens/effect-uom",
   "version": "0.0.0-development",
   "exports": "./src/index.ts",
   "publish": {

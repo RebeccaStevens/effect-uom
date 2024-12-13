@@ -4,8 +4,8 @@ Any donations would be much appreciated. 😄
 
 ## Enterprise Users
 
-`__package_name__` is available as part of the
-[Tidelift Subscription](https://tidelift.com/funding/github/npm/__package_name__).
+`effect-uom` is available as part of the
+[Tidelift Subscription](https://tidelift.com/funding/github/npm/effect-uom).
 
 ## Real money
 
