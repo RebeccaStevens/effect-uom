@@ -2,6 +2,6 @@
   "$schema": "node_modules/knip/schema-jsonc.json",
   "entry": ["src/index.ts!"],
   "project": ["src/**/*.ts!"],
-  "ignoreDependencies": ["@eslint/compat", "tsc-files"],
+  "ignoreDependencies": ["@eslint/compat", "effect-uom", "tsc-files"],
   "exclude": ["exports", "nsExports", "types", "nsTypes"],
 }

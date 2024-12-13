@@ -11,8 +11,8 @@ type PackageJSON = typeof pkg & {
 };
 
 const externalDependencies = [
-  ...Object.keys((pkg as PackageJSON).dependencies ?? {}),
-  ...Object.keys((pkg as PackageJSON).peerDependencies ?? {}),
+  ...Object.keys((pkg as PackageJSON).dependencies),
+  ...Object.keys((pkg as PackageJSON).peerDependencies),
 ];
 
 export default {
