@@ -48,7 +48,9 @@ plugins:
     - assets:
         - CHANGELOG.md
   - "@semantic-release/npm"
-  - "@sebbo2002/semantic-release-jsr"
+  - - "@sebbo2002/semantic-release-jsr"
+    - publishArgs:
+        - "--allow-slow-types"
   - - "@semantic-release/github"
     - releasedLabels:
         - "Status: Released"
