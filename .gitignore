@@ -4,3 +4,7 @@ node_modules/
 /dist/
 
 *.log
+
+# Autogen files
+/docs/generated/
+/docs/coverage.svg
