@@ -1,5 +1,4 @@
 import { type Brand, type Branded, error, refined } from "effect/Brand";
-// eslint-disable-next-line ts/no-unused-vars
 import type { AbstractUnit, Unit, UnknownAbstractUnit, UnknownUnit } from "uom-types";
 
 type UomBrand = Brand<"uom">;

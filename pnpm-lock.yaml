@@ -25,8 +25,8 @@ importers:
         specifier: 1.2.4
         version: 1.2.4(eslint@9.17.0(jiti@2.4.0))
       '@rebeccastevens/eslint-config':
-        specifier: 3.3.4
-        version: 3.3.4(cpwnmjxbykfwnsmrwiuqggng24)
+        specifier: 3.3.5
+        version: 3.3.5(cpwnmjxbykfwnsmrwiuqggng24)
       '@rollup/plugin-typescript':
         specifier: 12.1.1
         version: 12.1.1(rollup@4.28.1)(tslib@2.6.3)(typescript@5.7.2)
@@ -1397,8 +1397,8 @@ packages:
     resolution: {integrity: sha512-DqrO+oXGR7HCuicNy6quk6ALJSDDPKI7RZz1bP5im8mSL8J2e+9w26LdkjuAfpAjOutYUJVbnXnx4IbTQeIgfw==}
     engines: {node: '>=12'}
 
-  '@rebeccastevens/eslint-config@3.3.4':
-    resolution: {integrity: sha512-t6sdSfqIDEMQYK6NdbUJaegguesCsVHQ9lEGo7JlfAagwbEmUREV3W2YDnn1Dpgzvc8kIzjiuYiFv48ojKr2fA==}
+  '@rebeccastevens/eslint-config@3.3.5':
+    resolution: {integrity: sha512-HN19TCb0Us/JYAURh44GnNSZw//HdvdVqRKsEfMIsN9BTLLOHM2JRFDxzS0fuSNoN17dn2HYewjUZ16W01/A7w==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@eslint-react/eslint-plugin': '*'
@@ -6507,7 +6507,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@rebeccastevens/eslint-config@3.3.4(cpwnmjxbykfwnsmrwiuqggng24)':
+  '@rebeccastevens/eslint-config@3.3.5(cpwnmjxbykfwnsmrwiuqggng24)':
     dependencies:
       '@antfu/install-pkg': 0.5.0
       '@clack/prompts': 0.8.2
