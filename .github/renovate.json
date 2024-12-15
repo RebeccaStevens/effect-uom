@@ -51,6 +51,14 @@
       "rangeStrategy": "replace",
       "semanticCommitScope": "dev-deps",
       "semanticCommitType": "ci"
+    },
+    {
+      "matchPackageNames": ["effect"],
+      "matchDepTypes": ["devDependencies"],
+      "matchManagers": ["npm"],
+      "rangeStrategy": "widen",
+      "semanticCommitScope": "peer-deps",
+      "semanticCommitType": "chore"
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"]
