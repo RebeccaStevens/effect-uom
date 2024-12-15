@@ -62,3 +62,7 @@ bunx jsr add @rebeccastevens/effect-uom
 ## Uses
 
 This library uses [uom-types](https://github.com/RebeccaStevens/uom-types) as its base.
+
+## Documentation
+
+Check out [RebeccaStevens.github.io/effect-uom](https://RebeccaStevens.github.io/effect-uom/) for the documentation.
