@@ -14,7 +14,7 @@ export type MagneticMoment = uom.MagneticMoment;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticMoment: (value: number) => MagneticMoment = brandUom<MagneticMoment>;
+export const MagneticMoment: <V extends MagneticMoment = MagneticMoment>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MagneticMoment}.
@@ -32,4 +32,4 @@ export type WeberMeter = uom.WeberMeter;
  * @category Electromagnetic
  * @symbol `Wb⋅m`
  */
-export const WeberMeter: (value: number) => WeberMeter = brandUom<WeberMeter>;
+export const WeberMeter: (value: number) => WeberMeter = brandUom;

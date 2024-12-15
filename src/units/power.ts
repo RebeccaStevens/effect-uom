@@ -16,7 +16,7 @@ export type Power = uom.Power;
  * @category Electromagnetic
  * @category Mechanical
  */
-export const Power: (value: number) => Power = brandUom<Power>;
+export const Power: <V extends Power = Power>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Power}.
@@ -38,4 +38,4 @@ export type Watt = uom.Watt;
  * @category Mechanical
  * @symbol `W`
  */
-export const Watt: (value: number) => Watt = brandUom<Watt>;
+export const Watt: (value: number) => Watt = brandUom;

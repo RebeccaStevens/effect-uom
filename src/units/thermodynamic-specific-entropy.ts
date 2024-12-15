@@ -14,7 +14,7 @@ export type SpecificEntropy = uom.SpecificEntropy;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const SpecificEntropy: (value: number) => SpecificEntropy = brandUom<SpecificEntropy>;
+export const SpecificEntropy: <V extends SpecificEntropy = SpecificEntropy>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SpecificEntropy}.
@@ -32,4 +32,4 @@ export type JoulePerKilogramKelvin = uom.JoulePerKilogramKelvin;
  * @category Thermodynamic
  * @symbol `J/(K⋅kg)`
  */
-export const JoulePerKilogramKelvin: (value: number) => JoulePerKilogramKelvin = brandUom<JoulePerKilogramKelvin>;
+export const JoulePerKilogramKelvin: (value: number) => JoulePerKilogramKelvin = brandUom;

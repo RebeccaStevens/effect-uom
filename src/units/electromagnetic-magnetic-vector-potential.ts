@@ -18,7 +18,9 @@ export type MagneticVectorPotential = uom.MagneticVectorPotential;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticVectorPotential: (value: number) => MagneticVectorPotential = brandUom<MagneticVectorPotential>;
+export const MagneticVectorPotential: <V extends MagneticVectorPotential = MagneticVectorPotential>(
+  value: number,
+) => V = brandUom;
 
 /**
  * A unit of {@link MagneticVectorPotential}.
@@ -36,4 +38,4 @@ export type WeberPerMeter = uom.WeberPerMeter;
  * @category Electromagnetic
  * @symbol `Wb/m`
  */
-export const WeberPerMeter: (value: number) => WeberPerMeter = brandUom<WeberPerMeter>;
+export const WeberPerMeter: (value: number) => WeberPerMeter = brandUom;

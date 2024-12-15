@@ -14,7 +14,7 @@ export type CatalyticActivity = uom.CatalyticActivity;
  * @group Abstract Units
  * @category Chemical
  */
-export const CatalyticActivity: (value: number) => CatalyticActivity = brandUom<CatalyticActivity>;
+export const CatalyticActivity: <V extends CatalyticActivity = CatalyticActivity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link CatalyticActivity}.
@@ -34,4 +34,4 @@ export type Katal = uom.Katal;
  * @category Chemical
  * @symbol `kat`
  */
-export const Katal: (value: number) => Katal = brandUom<Katal>;
+export const Katal: (value: number) => Katal = brandUom;

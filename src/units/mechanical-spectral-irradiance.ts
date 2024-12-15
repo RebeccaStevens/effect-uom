@@ -14,7 +14,7 @@ export type SpectralIrradiance = uom.SpectralIrradiance;
  * @group Abstract Units
  * @category Mechanical
  */
-export const SpectralIrradiance: (value: number) => SpectralIrradiance = brandUom<SpectralIrradiance>;
+export const SpectralIrradiance: <V extends SpectralIrradiance = SpectralIrradiance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SpectralIrradiance}.
@@ -32,4 +32,4 @@ export type WattPerCubicMeter = uom.WattPerCubicMeter;
  * @category Mechanical
  * @symbol `W/m³`
  */
-export const WattPerCubicMeter: (value: number) => WattPerCubicMeter = brandUom<WattPerCubicMeter>;
+export const WattPerCubicMeter: (value: number) => WattPerCubicMeter = brandUom;

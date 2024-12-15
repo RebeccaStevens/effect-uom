@@ -14,7 +14,7 @@ export type Velocity = uom.Velocity;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Velocity: (value: number) => Velocity = brandUom<Velocity>;
+export const Velocity: <V extends Velocity = Velocity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Velocity}.
@@ -32,4 +32,4 @@ export type MeterPerSecond = uom.MeterPerSecond;
  * @category Kinematic
  * @symbol `m/s`
  */
-export const MeterPerSecond: (value: number) => MeterPerSecond = brandUom<MeterPerSecond>;
+export const MeterPerSecond: (value: number) => MeterPerSecond = brandUom;

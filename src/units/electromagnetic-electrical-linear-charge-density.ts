@@ -18,8 +18,7 @@ export type ElectricLinearChargeDensity = uom.ElectricLinearChargeDensity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricLinearChargeDensity: (value: number) => ElectricLinearChargeDensity =
-  brandUom<ElectricLinearChargeDensity>;
+export const ElectricLinearChargeDensity: (value: number) => ElectricLinearChargeDensity = brandUom;
 
 /**
  * A unit of {@link ElectricLinearChargeDensity}.
@@ -37,4 +36,4 @@ export type CoulombPerMeter = uom.CoulombPerMeter;
  * @category Electromagnetic
  * @symbol `C/m`
  */
-export const CoulombPerMeter: (value: number) => CoulombPerMeter = brandUom<CoulombPerMeter>;
+export const CoulombPerMeter: (value: number) => CoulombPerMeter = brandUom;

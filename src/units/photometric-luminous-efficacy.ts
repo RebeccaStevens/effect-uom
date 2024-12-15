@@ -14,7 +14,7 @@ export type LuminousEfficacy = uom.LuminousEfficacy;
  * @group Abstract Units
  * @category Photometric
  */
-export const LuminousEfficacy: (value: number) => LuminousEfficacy = brandUom<LuminousEfficacy>;
+export const LuminousEfficacy: <V extends LuminousEfficacy = LuminousEfficacy>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link LuminousEfficacy}.
@@ -32,4 +32,4 @@ export type LumenPerWatt = uom.LumenPerWatt;
  * @category Photometric
  * @symbol `lm/W`
  */
-export const LumenPerWatt: (value: number) => LumenPerWatt = brandUom<LumenPerWatt>;
+export const LumenPerWatt: (value: number) => LumenPerWatt = brandUom;

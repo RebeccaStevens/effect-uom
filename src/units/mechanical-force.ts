@@ -14,7 +14,7 @@ export type Force = uom.Force;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Force: (value: number) => Force = brandUom<Force>;
+export const Force: <V extends Force = Force>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Force}.
@@ -38,4 +38,4 @@ export type Newton = uom.Newton;
  * @category Mechanical
  * @symbol `N`
  */
-export const Newton: (value: number) => Newton = brandUom<Newton>;
+export const Newton: (value: number) => Newton = brandUom;

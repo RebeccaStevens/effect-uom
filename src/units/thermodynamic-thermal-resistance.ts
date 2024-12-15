@@ -14,7 +14,7 @@ export type ThermalResistance = uom.ThermalResistance;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const ThermalResistance: (value: number) => ThermalResistance = brandUom<ThermalResistance>;
+export const ThermalResistance: <V extends ThermalResistance = ThermalResistance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ThermalResistance}.
@@ -32,4 +32,4 @@ export type KelvinPerWatt = uom.KelvinPerWatt;
  * @category Thermodynamic
  * @symbol `K/W`
  */
-export const KelvinPerWatt: (value: number) => KelvinPerWatt = brandUom<KelvinPerWatt>;
+export const KelvinPerWatt: (value: number) => KelvinPerWatt = brandUom;

@@ -14,7 +14,7 @@ export type ElectricCurrent = uom.ElectricCurrent;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricCurrent: (value: number) => ElectricCurrent = brandUom<ElectricCurrent>;
+export const ElectricCurrent: <V extends ElectricCurrent = ElectricCurrent>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricCurrent}.
@@ -32,4 +32,4 @@ export type Ampere = uom.Ampere;
  * @category Base
  * @symbol `A`
  */
-export const Ampere: (value: number) => Ampere = brandUom<Ampere>;
+export const Ampere: (value: number) => Ampere = brandUom;

@@ -14,7 +14,8 @@ export type MagneticSusceptibility = uom.MagneticSusceptibility;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticSusceptibility: (value: number) => MagneticSusceptibility = brandUom<MagneticSusceptibility>;
+export const MagneticSusceptibility: <V extends MagneticSusceptibility = MagneticSusceptibility>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link MagneticSusceptibility}.
@@ -32,4 +33,4 @@ export type MeterPerHenry = uom.MeterPerHenry;
  * @category Electromagnetic
  * @symbol `m/H`
  */
-export const MeterPerHenry: (value: number) => MeterPerHenry = brandUom<MeterPerHenry>;
+export const MeterPerHenry: (value: number) => MeterPerHenry = brandUom;

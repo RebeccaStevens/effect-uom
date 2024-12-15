@@ -14,7 +14,7 @@ export type AmountOfSubstance = uom.AmountOfSubstance;
  * @group Abstract Units
  * @category Chemical
  */
-export const AmountOfSubstance: (value: number) => AmountOfSubstance = brandUom<AmountOfSubstance>;
+export const AmountOfSubstance: <V extends AmountOfSubstance = AmountOfSubstance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link AmountOfSubstance}.
@@ -34,4 +34,4 @@ export type Mole = uom.Mole;
  * @category Chemical
  * @symbol `mol`
  */
-export const Mole: (value: number) => Mole = brandUom<Mole>;
+export const Mole: (value: number) => Mole = brandUom;

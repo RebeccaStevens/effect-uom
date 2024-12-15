@@ -14,7 +14,7 @@ export type RadiantIntensity = uom.RadiantIntensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const RadiantIntensity: (value: number) => RadiantIntensity = brandUom<RadiantIntensity>;
+export const RadiantIntensity: <V extends RadiantIntensity = RadiantIntensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link RadiantIntensity}.
@@ -32,4 +32,4 @@ export type WattPerSteradian = uom.WattPerSteradian;
  * @category Mechanical
  * @symbol `W/sr`
  */
-export const WattPerSteradian: (value: number) => WattPerSteradian = brandUom<WattPerSteradian>;
+export const WattPerSteradian: (value: number) => WattPerSteradian = brandUom;

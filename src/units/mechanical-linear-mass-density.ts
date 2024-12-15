@@ -14,7 +14,7 @@ export type LinearMassDensity = uom.LinearMassDensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const LinearMassDensity: (value: number) => LinearMassDensity = brandUom<LinearMassDensity>;
+export const LinearMassDensity: <V extends LinearMassDensity = LinearMassDensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link LinearMassDensity}.
@@ -32,4 +32,4 @@ export type KilogramPerMeter = uom.KilogramPerMeter;
  * @category Mechanical
  * @symbol `kg/m`
  */
-export const KilogramPerMeter: (value: number) => KilogramPerMeter = brandUom<KilogramPerMeter>;
+export const KilogramPerMeter: (value: number) => KilogramPerMeter = brandUom;

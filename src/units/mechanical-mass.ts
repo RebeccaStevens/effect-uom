@@ -14,7 +14,7 @@ export type Mass = uom.Mass;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Mass: (value: number) => Mass = brandUom<Mass>;
+export const Mass: <V extends Mass = Mass>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Mass}.
@@ -34,7 +34,7 @@ export type Gram = uom.Gram;
  * @category Mechanical
  * @symbol `g`
  */
-export const Gram: (value: number) => Gram = brandUom<Gram>;
+export const Gram: (value: number) => Gram = brandUom;
 
 /**
  * A unit of {@link Mass}.
@@ -52,4 +52,4 @@ export type Tonne = uom.Tonne;
  * @category Mechanical
  * @symbol `t`
  */
-export const Tonne: (value: number) => Tonne = brandUom<Tonne>;
+export const Tonne: (value: number) => Tonne = brandUom;

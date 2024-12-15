@@ -14,7 +14,8 @@ export type MagneticDipoleMoment = uom.MagneticDipoleMoment;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticDipoleMoment: (value: number) => MagneticDipoleMoment = brandUom<MagneticDipoleMoment>;
+export const MagneticDipoleMoment: <V extends MagneticDipoleMoment = MagneticDipoleMoment>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link MagneticDipoleMoment}.
@@ -32,4 +33,4 @@ export type JoulePerTesla = uom.JoulePerTesla;
  * @category Electromagnetic
  * @symbol `J/T`
  */
-export const JoulePerTesla: (value: number) => JoulePerTesla = brandUom<JoulePerTesla>;
+export const JoulePerTesla: (value: number) => JoulePerTesla = brandUom;

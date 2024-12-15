@@ -14,7 +14,7 @@ export type MagnetomotiveForce = uom.MagnetomotiveForce;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagnetomotiveForce: (value: number) => MagnetomotiveForce = brandUom<MagnetomotiveForce>;
+export const MagnetomotiveForce: <V extends MagnetomotiveForce = MagnetomotiveForce>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MagnetomotiveForce}.
@@ -32,4 +32,4 @@ export type AmpereRadian = uom.AmpereRadian;
  * @category Electromagnetic
  * @symbol `A⋅rad`
  */
-export const AmpereRadian: (value: number) => AmpereRadian = brandUom<AmpereRadian>;
+export const AmpereRadian: (value: number) => AmpereRadian = brandUom;

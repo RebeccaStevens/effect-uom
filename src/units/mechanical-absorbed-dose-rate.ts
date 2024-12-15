@@ -14,7 +14,7 @@ export type AbsorbedDoseRate = uom.AbsorbedDoseRate;
  * @group Abstract Units
  * @category Mechanical
  */
-export const AbsorbedDoseRate: (value: number) => AbsorbedDoseRate = brandUom<AbsorbedDoseRate>;
+export const AbsorbedDoseRate: <V extends AbsorbedDoseRate = AbsorbedDoseRate>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link AbsorbedDoseRate}.
@@ -32,4 +32,4 @@ export type GrayPerSecond = uom.GrayPerSecond;
  * @category Mechanical
  * @symbol `Gy/s`
  */
-export const GrayPerSecond: (value: number) => GrayPerSecond = brandUom<GrayPerSecond>;
+export const GrayPerSecond: (value: number) => GrayPerSecond = brandUom;

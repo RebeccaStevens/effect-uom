@@ -18,7 +18,9 @@ export type SpecificAngularMomentum = uom.SpecificAngularMomentum;
  * @group Abstract Units
  * @category Mechanical
  */
-export const SpecificAngularMomentum: (value: number) => SpecificAngularMomentum = brandUom<SpecificAngularMomentum>;
+export const SpecificAngularMomentum: <V extends SpecificAngularMomentum = SpecificAngularMomentum>(
+  value: number,
+) => V = brandUom;
 
 /**
  * A unit of {@link SpecificAngularMomentum}.
@@ -36,8 +38,7 @@ export type JouleSecondPerRadianPerKilogram = uom.JouleSecondPerRadianPerKilogra
  * @category Mechanical
  * @symbol `J⋅s/rad/kg`
  */
-export const JouleSecondPerRadianPerKilogram: (value: number) => JouleSecondPerRadianPerKilogram =
-  brandUom<JouleSecondPerRadianPerKilogram>;
+export const JouleSecondPerRadianPerKilogram: (value: number) => JouleSecondPerRadianPerKilogram = brandUom;
 
 /**
  * A unit of {@link SpecificAngularMomentum}.
@@ -55,5 +56,4 @@ export type NewtonMeterSecondPerRadianPerKilogram = uom.NewtonMeterSecondPerRadi
  * @category Mechanical
  * @symbol `N⋅m⋅s/rad/kg`
  */
-export const NewtonMeterSecondPerRadianPerKilogram: (value: number) => NewtonMeterSecondPerRadianPerKilogram =
-  brandUom<NewtonMeterSecondPerRadianPerKilogram>;
+export const NewtonMeterSecondPerRadianPerKilogram: (value: number) => NewtonMeterSecondPerRadianPerKilogram = brandUom;

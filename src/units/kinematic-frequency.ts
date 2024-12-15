@@ -14,7 +14,7 @@ export type Frequency = uom.Frequency;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Frequency: (value: number) => Frequency = brandUom<Frequency>;
+export const Frequency: <V extends Frequency = Frequency>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -38,7 +38,7 @@ export type Hertz = uom.Hertz;
  * @category Kinematic
  * @symbol `Hz`
  */
-export const Hertz: (value: number) => Hertz = brandUom<Hertz>;
+export const Hertz: (value: number) => Hertz = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -56,7 +56,7 @@ export type PerSecond = uom.PerSecond;
  * @category Kinematic
  * @symbol `s⁻¹`
  */
-export const PerSecond: (value: number) => PerSecond = brandUom<PerSecond>;
+export const PerSecond: (value: number) => PerSecond = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -74,7 +74,7 @@ export type PerMinute = uom.PerMinute;
  * @category Kinematic
  * @symbol `min⁻¹`
  */
-export const PerMinute: (value: number) => PerMinute = brandUom<PerMinute>;
+export const PerMinute: (value: number) => PerMinute = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -92,7 +92,7 @@ export type PerHour = uom.PerHour;
  * @category Kinematic
  * @symbol `hr⁻¹`
  */
-export const PerHour: (value: number) => PerHour = brandUom<PerHour>;
+export const PerHour: (value: number) => PerHour = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -110,7 +110,7 @@ export type PerDay = uom.PerDay;
  * @category Kinematic
  * @symbol `day⁻¹`
  */
-export const PerDay: (value: number) => PerDay = brandUom<PerDay>;
+export const PerDay: (value: number) => PerDay = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -128,7 +128,7 @@ export type PerWeek = uom.PerWeek;
  * @category Kinematic
  * @symbol `wk⁻¹`
  */
-export const PerWeek: (value: number) => PerWeek = brandUom<PerWeek>;
+export const PerWeek: (value: number) => PerWeek = brandUom;
 
 /**
  * A unit of {@link Frequency}.
@@ -146,4 +146,4 @@ export type PerYear = uom.PerYear;
  * @category Kinematic
  * @symbol `yr⁻¹`
  */
-export const PerYear: (value: number) => PerYear = brandUom<PerYear>;
+export const PerYear: (value: number) => PerYear = brandUom;

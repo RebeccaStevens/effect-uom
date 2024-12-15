@@ -14,7 +14,8 @@ export type ElectricFieldStrength = uom.ElectricFieldStrength;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricFieldStrength: (value: number) => ElectricFieldStrength = brandUom<ElectricFieldStrength>;
+export const ElectricFieldStrength: <V extends ElectricFieldStrength = ElectricFieldStrength>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link ElectricFieldStrength}.
@@ -32,4 +33,4 @@ export type VoltPerMeter = uom.VoltPerMeter;
  * @category Electromagnetic
  * @symbol `V/m`
  */
-export const VoltPerMeter: (value: number) => VoltPerMeter = brandUom<VoltPerMeter>;
+export const VoltPerMeter: (value: number) => VoltPerMeter = brandUom;

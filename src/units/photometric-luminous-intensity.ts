@@ -14,7 +14,7 @@ export type LuminousIntensity = uom.LuminousIntensity;
  * @group Abstract Units
  * @category Photometric
  */
-export const LuminousIntensity: (value: number) => LuminousIntensity = brandUom<LuminousIntensity>;
+export const LuminousIntensity: <V extends LuminousIntensity = LuminousIntensity>(value: number) => V = brandUom;
 
 /**
  * A unit of luminous intensity.
@@ -32,4 +32,4 @@ export type Candela = uom.Candela;
  * @category Base
  * @symbol `cd`
  */
-export const Candela: (value: number) => Candela = brandUom<Candela>;
+export const Candela: (value: number) => Candela = brandUom;

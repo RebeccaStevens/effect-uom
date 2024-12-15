@@ -14,4 +14,4 @@ export type MagneticReluctance = uom.MagneticReluctance;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticReluctance: (value: number) => MagneticReluctance = brandUom<MagneticReluctance>;
+export const MagneticReluctance: <V extends MagneticReluctance = MagneticReluctance>(value: number) => V = brandUom;

@@ -14,7 +14,7 @@ export type Acceleration = uom.Acceleration;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Acceleration: (value: number) => Acceleration = brandUom<Acceleration>;
+export const Acceleration: <V extends Acceleration = Acceleration>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Acceleration}.
@@ -32,4 +32,4 @@ export type MeterPerSecondSquared = uom.MeterPerSecondSquared;
  * @category Kinematic
  * @symbol `m/s²`
  */
-export const MeterPerSecondSquared: (value: number) => MeterPerSecondSquared = brandUom<MeterPerSecondSquared>;
+export const MeterPerSecondSquared: (value: number) => MeterPerSecondSquared = brandUom;

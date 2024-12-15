@@ -14,7 +14,8 @@ export type MagneticPermeability = uom.MagneticPermeability;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticPermeability: (value: number) => MagneticPermeability = brandUom<MagneticPermeability>;
+export const MagneticPermeability: <V extends MagneticPermeability = MagneticPermeability>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link MagneticPermeability}.
@@ -32,4 +33,4 @@ export type HenryPerMeter = uom.HenryPerMeter;
  * @category Electromagnetic
  * @symbol `H/m`
  */
-export const HenryPerMeter: (value: number) => HenryPerMeter = brandUom<HenryPerMeter>;
+export const HenryPerMeter: (value: number) => HenryPerMeter = brandUom;

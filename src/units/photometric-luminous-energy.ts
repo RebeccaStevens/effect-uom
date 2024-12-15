@@ -14,7 +14,7 @@ export type LuminousEnergy = uom.LuminousEnergy;
  * @group Abstract Units
  * @category Photometric
  */
-export const LuminousEnergy: (value: number) => LuminousEnergy = brandUom<LuminousEnergy>;
+export const LuminousEnergy: <V extends LuminousEnergy = LuminousEnergy>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link LuminousEnergy}.
@@ -32,4 +32,4 @@ export type LumenSecond = uom.LumenSecond;
  * @category Photometric
  * @symbol `lm⋅s`
  */
-export const LumenSecond: (value: number) => LumenSecond = brandUom<LumenSecond>;
+export const LumenSecond: (value: number) => LumenSecond = brandUom;

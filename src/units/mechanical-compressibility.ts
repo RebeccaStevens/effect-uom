@@ -14,4 +14,4 @@ export type Compressibility = uom.Compressibility;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Compressibility: (value: number) => Compressibility = brandUom<Compressibility>;
+export const Compressibility: <V extends Compressibility = Compressibility>(value: number) => V = brandUom;

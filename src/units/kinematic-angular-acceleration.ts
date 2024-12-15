@@ -14,7 +14,7 @@ export type AngularAcceleration = uom.AngularAcceleration;
  * @group Abstract Units
  * @category Kinematic
  */
-export const AngularAcceleration: (value: number) => AngularAcceleration = brandUom<AngularAcceleration>;
+export const AngularAcceleration: <V extends AngularAcceleration = AngularAcceleration>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link AngularAcceleration}.
@@ -32,4 +32,4 @@ export type RadianPerSecondSquared = uom.RadianPerSecondSquared;
  * @category Kinematic
  * @symbol `rad/s²`
  */
-export const RadianPerSecondSquared: (value: number) => RadianPerSecondSquared = brandUom<RadianPerSecondSquared>;
+export const RadianPerSecondSquared: (value: number) => RadianPerSecondSquared = brandUom;

@@ -14,7 +14,7 @@ export type Duration = uom.Duration;
  * @group Abstract Units
  * @category Time
  */
-export const Duration: (value: number) => Duration = brandUom<Duration>;
+export const Duration: <V extends Duration = Duration>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Duration}.
@@ -34,7 +34,7 @@ export type Second = uom.Second;
  * @category Time
  * @symbol `s`
  */
-export const Second: (value: number) => Second = brandUom<Second>;
+export const Second: (value: number) => Second = brandUom;
 
 /**
  * A unit of {@link Duration}.
@@ -52,7 +52,7 @@ export type Minute = uom.Minute;
  * @category Time
  * @symbol `min`
  */
-export const Minute: (value: number) => Minute = brandUom<Minute>;
+export const Minute: (value: number) => Minute = brandUom;
 
 /**
  * A unit of {@link Duration}.
@@ -70,7 +70,7 @@ export type Hour = uom.Hour;
  * @category Time
  * @symbol `hr`
  */
-export const Hour: (value: number) => Hour = brandUom<Hour>;
+export const Hour: (value: number) => Hour = brandUom;
 
 /**
  * A unit of {@link Duration}.
@@ -88,7 +88,7 @@ export type Day = uom.Day;
  * @category Time
  * @symbol `day`
  */
-export const Day: (value: number) => Day = brandUom<Day>;
+export const Day: (value: number) => Day = brandUom;
 
 /**
  * A unit of {@link Duration}.
@@ -106,7 +106,7 @@ export type Week = uom.Week;
  * @category Time
  * @symbol `wk`
  */
-export const Week: (value: number) => Week = brandUom<Week>;
+export const Week: (value: number) => Week = brandUom;
 
 /**
  * A unit of {@link Duration}.
@@ -124,4 +124,4 @@ export type Year = uom.Year;
  * @category Time
  * @symbol `yr`
  */
-export const Year: (value: number) => Year = brandUom<Year>;
+export const Year: (value: number) => Year = brandUom;

@@ -14,7 +14,7 @@ export type SurfaceDensity = uom.SurfaceDensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const SurfaceDensity: (value: number) => SurfaceDensity = brandUom<SurfaceDensity>;
+export const SurfaceDensity: <V extends SurfaceDensity = SurfaceDensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SurfaceDensity}.
@@ -32,4 +32,4 @@ export type KilogramPerSquareMeter = uom.KilogramPerSquareMeter;
  * @category Mechanical
  * @symbol `kg/m²`
  */
-export const KilogramPerSquareMeter: (value: number) => KilogramPerSquareMeter = brandUom<KilogramPerSquareMeter>;
+export const KilogramPerSquareMeter: (value: number) => KilogramPerSquareMeter = brandUom;

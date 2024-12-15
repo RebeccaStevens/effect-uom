@@ -12,7 +12,7 @@ export type Identity = uom.Identity;
 /**
  * @group Abstract Units
  */
-export const Identity: (value: number) => Identity = brandUom<Identity>;
+export const Identity: <V extends Identity = Identity>(value: number) => V = brandUom;
 
 /**
  * A {@link Unit} with no units.
@@ -30,4 +30,4 @@ export type Unitless = uom.Unitless;
  * @category Base
  * @symbol ``
  */
-export const Unitless: (value: number) => Unitless = brandUom<Unitless>;
+export const Unitless: (value: number) => Unitless = brandUom;

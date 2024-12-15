@@ -14,7 +14,7 @@ export type MagneticFlux = uom.MagneticFlux;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticFlux: (value: number) => MagneticFlux = brandUom<MagneticFlux>;
+export const MagneticFlux: <V extends MagneticFlux = MagneticFlux>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MagneticFlux}.
@@ -38,4 +38,4 @@ export type Weber = uom.Weber;
  * @category Derived
  * @symbol `Wb`
  */
-export const Weber: (value: number) => Weber = brandUom<Weber>;
+export const Weber: (value: number) => Weber = brandUom;

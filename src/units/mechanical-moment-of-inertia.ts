@@ -14,7 +14,7 @@ export type MomentOfInertia = uom.MomentOfInertia;
  * @group Abstract Units
  * @category Mechanical
  */
-export const MomentOfInertia: (value: number) => MomentOfInertia = brandUom<MomentOfInertia>;
+export const MomentOfInertia: <V extends MomentOfInertia = MomentOfInertia>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MomentOfInertia}.
@@ -32,5 +32,4 @@ export type KilogramSquareMeterPerSteradian = uom.KilogramSquareMeterPerSteradia
  * @category Mechanical
  * @symbol `kg⋅m²/sr`
  */
-export const KilogramSquareMeterPerSteradian: (value: number) => KilogramSquareMeterPerSteradian =
-  brandUom<KilogramSquareMeterPerSteradian>;
+export const KilogramSquareMeterPerSteradian: (value: number) => KilogramSquareMeterPerSteradian = brandUom;

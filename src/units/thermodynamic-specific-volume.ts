@@ -14,7 +14,7 @@ export type SpecificVolume = uom.SpecificVolume;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const SpecificVolume: (value: number) => SpecificVolume = brandUom<SpecificVolume>;
+export const SpecificVolume: <V extends SpecificVolume = SpecificVolume>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SpecificVolume}.
@@ -32,4 +32,4 @@ export type CubicMeterPerKilogram = uom.CubicMeterPerKilogram;
  * @category Mechanical
  * @symbol `m³/kg`
  */
-export const CubicMeterPerKilogram: (value: number) => CubicMeterPerKilogram = brandUom<CubicMeterPerKilogram>;
+export const CubicMeterPerKilogram: (value: number) => CubicMeterPerKilogram = brandUom;

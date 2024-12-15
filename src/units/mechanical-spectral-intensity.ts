@@ -14,7 +14,7 @@ export type SpectralIntensity = uom.SpectralIntensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const SpectralIntensity: (value: number) => SpectralIntensity = brandUom<SpectralIntensity>;
+export const SpectralIntensity: <V extends SpectralIntensity = SpectralIntensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SpectralIntensity}.
@@ -32,4 +32,4 @@ export type WattPerSteradianMeter = uom.WattPerSteradianMeter;
  * @category Mechanical
  * @symbol `W/(sr⋅m)`
  */
-export const WattPerSteradianMeter: (value: number) => WattPerSteradianMeter = brandUom<WattPerSteradianMeter>;
+export const WattPerSteradianMeter: (value: number) => WattPerSteradianMeter = brandUom;

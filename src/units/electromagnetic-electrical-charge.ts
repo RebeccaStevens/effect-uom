@@ -14,7 +14,7 @@ export type ElectricCharge = uom.ElectricCharge;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricCharge: (value: number) => ElectricCharge = brandUom<ElectricCharge>;
+export const ElectricCharge: <V extends ElectricCharge = ElectricCharge>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricCharge}.
@@ -36,4 +36,4 @@ export type Coulomb = uom.Coulomb;
  * @category Derived
  * @symbol `C`
  */
-export const Coulomb: (value: number) => Coulomb = brandUom<Coulomb>;
+export const Coulomb: (value: number) => Coulomb = brandUom;

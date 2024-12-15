@@ -14,7 +14,7 @@ export type MolarConcentration = uom.MolarConcentration;
  * @group Abstract Units
  * @category Chemical
  */
-export const MolarConcentration: (value: number) => MolarConcentration = brandUom<MolarConcentration>;
+export const MolarConcentration: <V extends MolarConcentration = MolarConcentration>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MolarConcentration}.
@@ -36,7 +36,7 @@ export type Concentration = uom.Concentration;
  * @category Chemical
  * @symbol `c`
  */
-export const Concentration: (value: number) => Concentration = brandUom<Concentration>;
+export const Concentration: (value: number) => Concentration = brandUom;
 
 /**
  * A unit of {@link MolarConcentration}.
@@ -58,7 +58,7 @@ export type MolePerCubicMeter = uom.Concentration;
  * @category Chemical
  * @symbol `mol/m³`
  */
-export const MolePerCubicMeter: (value: number) => MolePerCubicMeter = brandUom<MolePerCubicMeter>;
+export const MolePerCubicMeter: (value: number) => MolePerCubicMeter = brandUom;
 
 /**
  * A unit of {@link MolarConcentration}.
@@ -76,4 +76,4 @@ export type MolePerLiter = uom.MolePerLiter;
  * @category Chemical
  * @symbol `mol/l`
  */
-export const MolePerLiter: (value: number) => MolePerLiter = brandUom<MolePerLiter>;
+export const MolePerLiter: (value: number) => MolePerLiter = brandUom;

@@ -14,7 +14,7 @@ export type MagneticFluxDensity = uom.MagneticFluxDensity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticFluxDensity: (value: number) => MagneticFluxDensity = brandUom<MagneticFluxDensity>;
+export const MagneticFluxDensity: <V extends MagneticFluxDensity = MagneticFluxDensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MagneticFluxDensity}.
@@ -36,4 +36,4 @@ export type Tesla = uom.Tesla;
  * @category Derived
  * @symbol `T`
  */
-export const Tesla: (value: number) => Tesla = brandUom<Tesla>;
+export const Tesla: (value: number) => Tesla = brandUom;

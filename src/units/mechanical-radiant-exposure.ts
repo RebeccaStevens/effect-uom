@@ -14,7 +14,7 @@ export type RadiantExposure = uom.RadiantExposure;
  * @group Abstract Units
  * @category Mechanical
  */
-export const RadiantExposure: (value: number) => RadiantExposure = brandUom<RadiantExposure>;
+export const RadiantExposure: <V extends RadiantExposure = RadiantExposure>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link RadiantExposure}.
@@ -32,4 +32,4 @@ export type JoulePerSquareMeter = uom.JoulePerSquareMeter;
  * @category Mechanical
  * @symbol `J/m²`
  */
-export const JoulePerSquareMeter: (value: number) => JoulePerSquareMeter = brandUom<JoulePerSquareMeter>;
+export const JoulePerSquareMeter: (value: number) => JoulePerSquareMeter = brandUom;

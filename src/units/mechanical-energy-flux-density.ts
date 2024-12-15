@@ -14,7 +14,7 @@ export type EnergyFluxDensity = uom.EnergyFluxDensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const EnergyFluxDensity: (value: number) => EnergyFluxDensity = brandUom<EnergyFluxDensity>;
+export const EnergyFluxDensity: <V extends EnergyFluxDensity = EnergyFluxDensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link EnergyFluxDensity}.
@@ -32,5 +32,4 @@ export type JoulePerSquareMeterSecond = uom.JoulePerSquareMeterSecond;
  * @category Mechanical
  * @symbol `J/(m²⋅s)`
  */
-export const JoulePerSquareMeterSecond: (value: number) => JoulePerSquareMeterSecond =
-  brandUom<JoulePerSquareMeterSecond>;
+export const JoulePerSquareMeterSecond: (value: number) => JoulePerSquareMeterSecond = brandUom;

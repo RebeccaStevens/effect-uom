@@ -14,7 +14,8 @@ export type ElectricalConductivity = uom.ElectricalConductivity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricalConductivity: (value: number) => ElectricalConductivity = brandUom<ElectricalConductivity>;
+export const ElectricalConductivity: <V extends ElectricalConductivity = ElectricalConductivity>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link ElectricalConductivity}.
@@ -32,4 +33,4 @@ export type SiemensPerMeter = uom.SiemensPerMeter;
  * @category Electromagnetic
  * @symbol `S/m`
  */
-export const SiemensPerMeter: (value: number) => SiemensPerMeter = brandUom<SiemensPerMeter>;
+export const SiemensPerMeter: (value: number) => SiemensPerMeter = brandUom;

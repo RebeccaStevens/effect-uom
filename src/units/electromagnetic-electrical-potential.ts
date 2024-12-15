@@ -14,7 +14,7 @@ export type ElectricPotential = uom.ElectricPotential;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricPotential: (value: number) => ElectricPotential = brandUom<ElectricPotential>;
+export const ElectricPotential: <V extends ElectricPotential = ElectricPotential>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricPotential}.
@@ -38,4 +38,4 @@ export type Volt = uom.Volt;
  * @category Derived
  * @symbol `V`
  */
-export const Volt: (value: number) => Volt = brandUom<Volt>;
+export const Volt: (value: number) => Volt = brandUom;

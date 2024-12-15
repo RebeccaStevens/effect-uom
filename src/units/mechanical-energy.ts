@@ -14,7 +14,7 @@ export type Energy = uom.Energy;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Energy: (value: number) => Energy = brandUom<Energy>;
+export const Energy: <V extends Energy = Energy>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Energy}.
@@ -40,7 +40,7 @@ export type Joule = uom.Joule;
  * @category Mechanical
  * @symbol `J`
  */
-export const Joule: (value: number) => Joule = brandUom<Joule>;
+export const Joule: (value: number) => Joule = brandUom;
 
 /**
  * A unit of {@link Energy}.
@@ -58,7 +58,7 @@ export type WattSecond = uom.WattSecond;
  * @category Mechanical
  * @symbol `W⋅s`
  */
-export const WattSecond: (value: number) => WattSecond = brandUom<WattSecond>;
+export const WattSecond: (value: number) => WattSecond = brandUom;
 
 /**
  * A unit of {@link Energy}.
@@ -76,7 +76,7 @@ export type WattMinute = uom.WattMinute;
  * @category Mechanical
  * @symbol `W⋅min`
  */
-export const WattMinute: (value: number) => WattMinute = brandUom<WattMinute>;
+export const WattMinute: (value: number) => WattMinute = brandUom;
 
 /**
  * A unit of {@link Energy}.
@@ -94,4 +94,4 @@ export type WattHour = uom.WattHour;
  * @category Mechanical
  * @symbol `W⋅hr`
  */
-export const WattHour: (value: number) => WattHour = brandUom<WattHour>;
+export const WattHour: (value: number) => WattHour = brandUom;

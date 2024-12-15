@@ -14,7 +14,7 @@ export type Momentum = uom.Momentum;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Momentum: (value: number) => Momentum = brandUom<Momentum>;
+export const Momentum: <V extends Momentum = Momentum>(value: number) => V = brandUom;
 
 /**
  * One newton second corresponds to a one newton of force applied for one second.
@@ -32,4 +32,4 @@ export type NewtonSecond = uom.NewtonSecond;
  * @category Mechanical
  * @symbol `N⋅s`
  */
-export const NewtonSecond: (value: number) => NewtonSecond = brandUom<NewtonSecond>;
+export const NewtonSecond: (value: number) => NewtonSecond = brandUom;

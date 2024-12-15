@@ -14,7 +14,7 @@ export type MagneticRigidity = uom.MagneticRigidity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticRigidity: (value: number) => MagneticRigidity = brandUom<MagneticRigidity>;
+export const MagneticRigidity: <V extends MagneticRigidity = MagneticRigidity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MagneticRigidity}.
@@ -32,4 +32,4 @@ export type TeslaMeter = uom.TeslaMeter;
  * @category Electromagnetic
  * @symbol `T⋅m`
  */
-export const TeslaMeter: (value: number) => TeslaMeter = brandUom<TeslaMeter>;
+export const TeslaMeter: (value: number) => TeslaMeter = brandUom;

@@ -14,7 +14,7 @@ export type AngularMomentum = uom.AngularMomentum;
  * @group Abstract Units
  * @category Kinematic
  */
-export const AngularMomentum: (value: number) => AngularMomentum = brandUom<AngularMomentum>;
+export const AngularMomentum: <V extends AngularMomentum = AngularMomentum>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link AngularMomentum}.
@@ -32,4 +32,4 @@ export type JouleSecondPerRadian = uom.JouleSecondPerRadian;
  * @category Kinematic
  * @symbol `J⋅s/rad`
  */
-export const JouleSecondPerRadian: (value: number) => JouleSecondPerRadian = brandUom<JouleSecondPerRadian>;
+export const JouleSecondPerRadian: (value: number) => JouleSecondPerRadian = brandUom;

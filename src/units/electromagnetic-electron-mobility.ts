@@ -14,7 +14,7 @@ export type ElectronMobility = uom.ElectronMobility;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectronMobility: (value: number) => ElectronMobility = brandUom<ElectronMobility>;
+export const ElectronMobility: <V extends ElectronMobility = ElectronMobility>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectronMobility}.
@@ -32,4 +32,4 @@ export type SquareMeterPerVoltSecond = uom.SquareMeterPerVoltSecond;
  * @category Electromagnetic
  * @symbol `m²/(V⋅s)`
  */
-export const SquareMeterPerVoltSecond: (value: number) => SquareMeterPerVoltSecond = brandUom<SquareMeterPerVoltSecond>;
+export const SquareMeterPerVoltSecond: (value: number) => SquareMeterPerVoltSecond = brandUom;

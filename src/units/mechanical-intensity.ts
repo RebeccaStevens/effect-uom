@@ -14,7 +14,7 @@ export type Intensity = uom.Intensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Intensity: (value: number) => Intensity = brandUom<Intensity>;
+export const Intensity: <V extends Intensity = Intensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Intensity}.
@@ -32,4 +32,4 @@ export type WattPerSquareMeter = uom.WattPerSquareMeter;
  * @category Mechanical
  * @symbol `W/m²`
  */
-export const WattPerSquareMeter: (value: number) => WattPerSquareMeter = brandUom<WattPerSquareMeter>;
+export const WattPerSquareMeter: (value: number) => WattPerSquareMeter = brandUom;

@@ -14,7 +14,7 @@ export type Yank = uom.Yank;
  * @group Unit Classes
  * @category Mechanical
  */
-export const Yank: (value: number) => Yank = brandUom<Yank>;
+export const Yank: (value: number) => Yank = brandUom;
 
 /**
  * A unit of {@link Yank}.
@@ -32,4 +32,4 @@ export type NewtonPerSecond = uom.NewtonPerSecond;
  * @category Mechanical
  * @symbol `N/s`
  */
-export const NewtonPerSecond: (value: number) => NewtonPerSecond = brandUom<NewtonPerSecond>;
+export const NewtonPerSecond: (value: number) => NewtonPerSecond = brandUom;

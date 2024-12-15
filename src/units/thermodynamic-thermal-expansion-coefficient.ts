@@ -18,5 +18,4 @@ export type ThermalExpansionCoefficient = uom.ThermalExpansionCoefficient;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const ThermalExpansionCoefficient: (value: number) => ThermalExpansionCoefficient =
-  brandUom<ThermalExpansionCoefficient>;
+export const ThermalExpansionCoefficient: (value: number) => ThermalExpansionCoefficient = brandUom;

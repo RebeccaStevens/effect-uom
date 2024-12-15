@@ -14,7 +14,7 @@ export type Radiance = uom.Radiance;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Radiance: (value: number) => Radiance = brandUom<Radiance>;
+export const Radiance: <V extends Radiance = Radiance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Radiance}.
@@ -32,5 +32,4 @@ export type WattPerSteradianSquareMeter = uom.WattPerSteradianSquareMeter;
  * @category Mechanical
  * @symbol `W/(sr⋅m²)`
  */
-export const WattPerSteradianSquareMeter: (value: number) => WattPerSteradianSquareMeter =
-  brandUom<WattPerSteradianSquareMeter>;
+export const WattPerSteradianSquareMeter: (value: number) => WattPerSteradianSquareMeter = brandUom;

@@ -14,7 +14,7 @@ export type Luminance = uom.Luminance;
  * @group Abstract Units
  * @category Photometric
  */
-export const Luminance: (value: number) => Luminance = brandUom<Luminance>;
+export const Luminance: <V extends Luminance = Luminance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Luminance}.
@@ -34,7 +34,7 @@ export type Lux = uom.Lux;
  * @category Photometric
  * @symbol `lx`
  */
-export const Lux: (value: number) => Lux = brandUom<Lux>;
+export const Lux: (value: number) => Lux = brandUom;
 
 /**
  * A unit of {@link Luminance}.
@@ -52,4 +52,4 @@ export type CandelaPerSquareMeter = uom.CandelaPerSquareMeter;
  * @category Photometric
  * @symbol `cd/m²`
  */
-export const CandelaPerSquareMeter: (value: number) => CandelaPerSquareMeter = brandUom<CandelaPerSquareMeter>;
+export const CandelaPerSquareMeter: (value: number) => CandelaPerSquareMeter = brandUom;

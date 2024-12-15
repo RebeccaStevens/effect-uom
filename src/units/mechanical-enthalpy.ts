@@ -14,7 +14,7 @@ export type Enthalpy = uom.Enthalpy;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Enthalpy: (value: number) => Enthalpy = brandUom<Enthalpy>;
+export const Enthalpy: <V extends Enthalpy = Enthalpy>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Enthalpy}.
@@ -38,4 +38,4 @@ export type Gray = uom.Gray;
  * @category Mechanical
  * @symbol `Gy`
  */
-export const Gray: (value: number) => Gray = brandUom<Gray>;
+export const Gray: (value: number) => Gray = brandUom;

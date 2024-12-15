@@ -14,7 +14,7 @@ export type PlaneAngle = uom.PlaneAngle;
  * @group Abstract Units
  * @category Angle (Plane)
  */
-export const PlaneAngle: (value: number) => PlaneAngle = brandUom<PlaneAngle>;
+export const PlaneAngle: <V extends PlaneAngle = PlaneAngle>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link PlaneAngle}.
@@ -42,7 +42,7 @@ export type Radian = uom.Radian;
  * @category Angle (Plane)
  * @symbol `rad`
  */
-export const Radian: (value: number) => Radian = brandUom<Radian>;
+export const Radian: (value: number) => Radian = brandUom;
 
 /**
  * A unit of {@link PlaneAngle}.
@@ -64,7 +64,7 @@ export type Degree = uom.Degree;
  * @category Angle (Plane)
  * @symbol `°`
  */
-export const Degree: (value: number) => Degree = brandUom<Degree>;
+export const Degree: (value: number) => Degree = brandUom;
 
 /**
  * A unit of {@link PlaneAngle}.
@@ -88,7 +88,7 @@ export type Gradian = uom.Gradian;
  * @category Angle (Plane)
  * @symbol `gon`
  */
-export const Gradian: (value: number) => Gradian = brandUom<Gradian>;
+export const Gradian: (value: number) => Gradian = brandUom;
 
 /**
  * A unit of {@link PlaneAngle}.
@@ -110,4 +110,4 @@ export type Turn = uom.Turn;
  * @category Angle (Plane)
  * @symbol `tr`
  */
-export const Turn: (value: number) => Turn = brandUom<Turn>;
+export const Turn: (value: number) => Turn = brandUom;

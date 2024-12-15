@@ -14,7 +14,7 @@ export type ElectricCapacitance = uom.ElectricCapacitance;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricCapacitance: (value: number) => ElectricCapacitance = brandUom<ElectricCapacitance>;
+export const ElectricCapacitance: <V extends ElectricCapacitance = ElectricCapacitance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricCapacitance}.
@@ -40,4 +40,4 @@ export type Farad = uom.Farad;
  * @category Electromagnetic
  * @symbol `F`
  */
-export const Farad: (value: number) => Farad = brandUom<Farad>;
+export const Farad: (value: number) => Farad = brandUom;

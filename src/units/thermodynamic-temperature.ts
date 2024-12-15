@@ -14,7 +14,7 @@ export type Temperature = uom.Temperature;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const Temperature: (value: number) => Temperature = brandUom<Temperature>;
+export const Temperature: <V extends Temperature = Temperature>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Temperature}.
@@ -34,7 +34,7 @@ export type Kelvin = uom.Kelvin;
  * @category Thermodynamic
  * @symbol `K`
  */
-export const Kelvin: (value: number) => Kelvin = brandUom<Kelvin>;
+export const Kelvin: (value: number) => Kelvin = brandUom;
 
 /**
  * A unit of {@link Temperature}.
@@ -58,4 +58,4 @@ export type Celsius = uom.Celsius;
  * @category Thermodynamic
  * @symbol `℃`
  */
-export const Celsius: (value: number) => Celsius = brandUom<Celsius>;
+export const Celsius: (value: number) => Celsius = brandUom;

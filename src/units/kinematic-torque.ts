@@ -14,7 +14,7 @@ export type Torque = uom.Torque;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Torque: (value: number) => Torque = brandUom<Torque>;
+export const Torque: <V extends Torque = Torque>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Torque}.
@@ -32,7 +32,7 @@ export type JoulePerRadian = uom.JoulePerRadian;
  * @category Kinematic
  * @symbol `J/rad`
  */
-export const JoulePerRadian: (value: number) => JoulePerRadian = brandUom<JoulePerRadian>;
+export const JoulePerRadian: (value: number) => JoulePerRadian = brandUom;
 
 /**
  * A unit of {@link Torque}.
@@ -50,4 +50,4 @@ export type NewtonMeterPerRadian = uom.NewtonMeterPerRadian;
  * @category Kinematic
  * @symbol `N⋅m/rad`
  */
-export const NewtonMeterPerRadian: (value: number) => NewtonMeterPerRadian = brandUom<NewtonMeterPerRadian>;
+export const NewtonMeterPerRadian: (value: number) => NewtonMeterPerRadian = brandUom;

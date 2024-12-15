@@ -14,7 +14,7 @@ export type KinematicViscosity = uom.KinematicViscosity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const KinematicViscosity: (value: number) => KinematicViscosity = brandUom<KinematicViscosity>;
+export const KinematicViscosity: <V extends KinematicViscosity = KinematicViscosity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link KinematicViscosity}.
@@ -32,4 +32,4 @@ export type SquareMeterPerSecond = uom.SquareMeterPerSecond;
  * @category Mechanical
  * @symbol `m²/s`
  */
-export const SquareMeterPerSecond: (value: number) => SquareMeterPerSecond = brandUom<SquareMeterPerSecond>;
+export const SquareMeterPerSecond: (value: number) => SquareMeterPerSecond = brandUom;

@@ -14,7 +14,7 @@ export type Volume = uom.Volume;
  * @group Unit Classes
  * @category Mechanical
  */
-export const Volume: (value: number) => Volume = brandUom<Volume>;
+export const Volume: (value: number) => Volume = brandUom;
 
 /**
  * A unit of volume.
@@ -32,4 +32,4 @@ export type Liter = uom.Liter;
  * @category Mechanical
  * @symbol `l`
  */
-export const Liter: (value: number) => Liter = brandUom<Liter>;
+export const Liter: (value: number) => Liter = brandUom;

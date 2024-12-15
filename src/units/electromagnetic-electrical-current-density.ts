@@ -14,7 +14,8 @@ export type ElectricCurrentDensity = uom.ElectricCurrentDensity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricCurrentDensity: (value: number) => ElectricCurrentDensity = brandUom<ElectricCurrentDensity>;
+export const ElectricCurrentDensity: <V extends ElectricCurrentDensity = ElectricCurrentDensity>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link ElectricCurrentDensity}.
@@ -32,4 +33,4 @@ export type AmperePerSquareMeter = uom.AmperePerSquareMeter;
  * @category Electromagnetic
  * @symbol `A/m²`
  */
-export const AmperePerSquareMeter: (value: number) => AmperePerSquareMeter = brandUom<AmperePerSquareMeter>;
+export const AmperePerSquareMeter: (value: number) => AmperePerSquareMeter = brandUom;

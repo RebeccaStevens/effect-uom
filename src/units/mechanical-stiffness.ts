@@ -14,7 +14,7 @@ export type Stiffness = uom.Stiffness;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Stiffness: (value: number) => Stiffness = brandUom<Stiffness>;
+export const Stiffness: <V extends Stiffness = Stiffness>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Stiffness}.
@@ -32,4 +32,4 @@ export type NewtonPerMeter = uom.NewtonPerMeter;
  * @category Mechanical
  * @symbol `N/m`
  */
-export const NewtonPerMeter: (value: number) => NewtonPerMeter = brandUom<NewtonPerMeter>;
+export const NewtonPerMeter: (value: number) => NewtonPerMeter = brandUom;

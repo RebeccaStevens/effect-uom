@@ -14,7 +14,7 @@ export type LuminousFlux = uom.LuminousFlux;
  * @group Abstract Units
  * @category Photometric
  */
-export const LuminousFlux: (value: number) => LuminousFlux = brandUom<LuminousFlux>;
+export const LuminousFlux: <V extends LuminousFlux = LuminousFlux>(value: number) => V = brandUom;
 
 /**
  * One Lumen is equal to the amount of light given out through a solid angle by a source of one
@@ -34,4 +34,4 @@ export type Lumen = uom.Lumen;
  * @category Derived
  * @symbol `lm`
  */
-export const Lumen: (value: number) => Lumen = brandUom<Lumen>;
+export const Lumen: (value: number) => Lumen = brandUom;

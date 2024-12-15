@@ -14,7 +14,7 @@ export type Resistivity = uom.Resistivity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const Resistivity: (value: number) => Resistivity = brandUom<Resistivity>;
+export const Resistivity: <V extends Resistivity = Resistivity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Resistivity}.
@@ -32,4 +32,4 @@ export type OhmMeter = uom.OhmMeter;
  * @category Electromagnetic
  * @symbol `Ωm`
  */
-export const OhmMeter: (value: number) => OhmMeter = brandUom<OhmMeter>;
+export const OhmMeter: (value: number) => OhmMeter = brandUom;

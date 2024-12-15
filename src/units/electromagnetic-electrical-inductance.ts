@@ -14,7 +14,7 @@ export type ElectricInductance = uom.ElectricInductance;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricInductance: (value: number) => ElectricInductance = brandUom<ElectricInductance>;
+export const ElectricInductance: <V extends ElectricInductance = ElectricInductance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricInductance}.
@@ -32,4 +32,4 @@ export type Henry = uom.Henry;
  * @category Derived
  * @symbol `H`
  */
-export const Henry: (value: number) => Henry = brandUom<Henry>;
+export const Henry: (value: number) => Henry = brandUom;

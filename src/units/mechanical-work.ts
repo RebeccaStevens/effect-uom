@@ -14,7 +14,7 @@ export type Work = uom.Work;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Work: (value: number) => Work = brandUom<Work>;
+export const Work: <V extends Work = Work>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Work}.
@@ -32,4 +32,4 @@ export type NewtonMeter = uom.NewtonMeter;
  * @category Mechanical
  * @symbol `N⋅m`
  */
-export const NewtonMeter: (value: number) => NewtonMeter = brandUom<NewtonMeter>;
+export const NewtonMeter: (value: number) => NewtonMeter = brandUom;

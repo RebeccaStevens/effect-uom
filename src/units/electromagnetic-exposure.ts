@@ -14,7 +14,7 @@ export type Exposure = uom.Exposure;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const Exposure: (value: number) => Exposure = brandUom<Exposure>;
+export const Exposure: <V extends Exposure = Exposure>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Exposure}.
@@ -32,4 +32,4 @@ export type CoulombPerKilogram = uom.CoulombPerKilogram;
  * @category Electromagnetic
  * @symbol `C/kg`
  */
-export const CoulombPerKilogram: (value: number) => CoulombPerKilogram = brandUom<CoulombPerKilogram>;
+export const CoulombPerKilogram: (value: number) => CoulombPerKilogram = brandUom;

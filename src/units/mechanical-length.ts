@@ -14,7 +14,7 @@ export type Length = uom.Length;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Length: (value: number) => Length = brandUom<Length>;
+export const Length: <V extends Length = Length>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Length}.
@@ -34,4 +34,4 @@ export type Meter = uom.Meter;
  * @category Mechanical
  * @symbol `m`
  */
-export const Meter: (value: number) => Meter = brandUom<Meter>;
+export const Meter: (value: number) => Meter = brandUom;

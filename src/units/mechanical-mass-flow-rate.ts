@@ -14,7 +14,7 @@ export type MassFlowRate = uom.MassFlowRate;
  * @group Abstract Units
  * @category Mechanical
  */
-export const MassFlowRate: (value: number) => MassFlowRate = brandUom<MassFlowRate>;
+export const MassFlowRate: <V extends MassFlowRate = MassFlowRate>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link MassFlowRate}.
@@ -32,4 +32,4 @@ export type KilogramPerSecond = uom.KilogramPerSecond;
  * @category Mechanical
  * @symbol `kg/s`
  */
-export const KilogramPerSecond: (value: number) => KilogramPerSecond = brandUom<KilogramPerSecond>;
+export const KilogramPerSecond: (value: number) => KilogramPerSecond = brandUom;

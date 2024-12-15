@@ -14,7 +14,7 @@ export type DynamicViscosity = uom.DynamicViscosity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const DynamicViscosity: (value: number) => DynamicViscosity = brandUom<DynamicViscosity>;
+export const DynamicViscosity: <V extends DynamicViscosity = DynamicViscosity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link DynamicViscosity}.
@@ -32,4 +32,4 @@ export type PascalSecond = uom.PascalSecond;
  * @category Mechanical
  * @symbol `Pa⋅s`
  */
-export const PascalSecond: (value: number) => PascalSecond = brandUom<PascalSecond>;
+export const PascalSecond: (value: number) => PascalSecond = brandUom;

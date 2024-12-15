@@ -14,7 +14,7 @@ export type ElectricResistance = uom.ElectricResistance;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricResistance: (value: number) => ElectricResistance = brandUom<ElectricResistance>;
+export const ElectricResistance: <V extends ElectricResistance = ElectricResistance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricResistance}.
@@ -38,4 +38,4 @@ export type Ohm = uom.Ohm;
  * @category Electromagnetic
  * @symbol `Ω`
  */
-export const Ohm: (value: number) => Ohm = brandUom<Ohm>;
+export const Ohm: (value: number) => Ohm = brandUom;

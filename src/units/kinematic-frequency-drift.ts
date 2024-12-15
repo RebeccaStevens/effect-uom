@@ -14,7 +14,7 @@ export type FrequencyDrift = uom.FrequencyDrift;
  * @group Abstract Units
  * @category Kinematic
  */
-export const FrequencyDrift: (value: number) => FrequencyDrift = brandUom<FrequencyDrift>;
+export const FrequencyDrift: <V extends FrequencyDrift = FrequencyDrift>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link FrequencyDrift} equal to one hertz per second.
@@ -32,4 +32,4 @@ export type HertzPerSecond = uom.HertzPerSecond;
  * @category Kinematic
  * @symbol `Hz/s`
  */
-export const HertzPerSecond: (value: number) => HertzPerSecond = brandUom<HertzPerSecond>;
+export const HertzPerSecond: (value: number) => HertzPerSecond = brandUom;

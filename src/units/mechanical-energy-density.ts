@@ -14,7 +14,7 @@ export type EnergyDensity = uom.EnergyDensity;
  * @group Abstract Units
  * @category Mechanical
  */
-export const EnergyDensity: (value: number) => EnergyDensity = brandUom<EnergyDensity>;
+export const EnergyDensity: <V extends EnergyDensity = EnergyDensity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link EnergyDensity}.
@@ -32,4 +32,4 @@ export type JoulePerCubicMeter = uom.JoulePerCubicMeter;
  * @category Mechanical
  * @symbol `J/m³`
  */
-export const JoulePerCubicMeter: (value: number) => JoulePerCubicMeter = brandUom<JoulePerCubicMeter>;
+export const JoulePerCubicMeter: (value: number) => JoulePerCubicMeter = brandUom;

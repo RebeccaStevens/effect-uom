@@ -14,7 +14,7 @@ export type Density = uom.Density;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Density: (value: number) => Density = brandUom<Density>;
+export const Density: <V extends Density = Density>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Density}.
@@ -32,4 +32,4 @@ export type KilogramPerCubicMeter = uom.KilogramPerCubicMeter;
  * @category Mechanical
  * @symbol `kg/m³`
  */
-export const KilogramPerCubicMeter: (value: number) => KilogramPerCubicMeter = brandUom<KilogramPerCubicMeter>;
+export const KilogramPerCubicMeter: (value: number) => KilogramPerCubicMeter = brandUom;

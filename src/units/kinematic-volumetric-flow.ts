@@ -14,7 +14,7 @@ export type VolumetricFlow = uom.VolumetricFlow;
  * @group Unit Classes
  * @category Kinematic
  */
-export const VolumetricFlow: (value: number) => VolumetricFlow = brandUom<VolumetricFlow>;
+export const VolumetricFlow: (value: number) => VolumetricFlow = brandUom;
 
 /**
  * A unit of {@link VolumetricFlow}.
@@ -32,4 +32,4 @@ export type CubicMeterPerSecond = uom.CubicMeterPerSecond;
  * @category Kinematic
  * @symbol `m³/s`
  */
-export const CubicMeterPerSecond: (value: number) => CubicMeterPerSecond = brandUom<CubicMeterPerSecond>;
+export const CubicMeterPerSecond: (value: number) => CubicMeterPerSecond = brandUom;

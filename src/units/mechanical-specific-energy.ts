@@ -14,7 +14,7 @@ export type SpecificEnergy = uom.SpecificEnergy;
  * @group Abstract Units
  * @category Mechanical
  */
-export const SpecificEnergy: (value: number) => SpecificEnergy = brandUom<SpecificEnergy>;
+export const SpecificEnergy: <V extends SpecificEnergy = SpecificEnergy>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SpecificEnergy}.
@@ -32,4 +32,4 @@ export type JoulePerKilogram = uom.JoulePerKilogram;
  * @category Mechanical
  * @symbol `J/kg`
  */
-export const JoulePerKilogram: (value: number) => JoulePerKilogram = brandUom<JoulePerKilogram>;
+export const JoulePerKilogram: (value: number) => JoulePerKilogram = brandUom;

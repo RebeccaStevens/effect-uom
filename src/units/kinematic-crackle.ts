@@ -14,7 +14,7 @@ export type Crackle = uom.Crackle;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Crackle: (value: number) => Crackle = brandUom<Crackle>;
+export const Crackle: <V extends Crackle = Crackle>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Crackle}.
@@ -32,4 +32,4 @@ export type MeterPerSecondToTheFifth = uom.MeterPerSecondToTheFifth;
  * @category Kinematic
  * @symbol `m/s⁵`
  */
-export const MeterPerSecondToTheFifth: (value: number) => MeterPerSecondToTheFifth = brandUom<MeterPerSecondToTheFifth>;
+export const MeterPerSecondToTheFifth: (value: number) => MeterPerSecondToTheFifth = brandUom;

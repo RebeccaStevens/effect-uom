@@ -14,7 +14,7 @@ export type Action = uom.Action;
  * @group Abstract Units
  * @category Mechanical
  */
-export const Action: (value: number) => Action = brandUom<Action>;
+export const Action: <V extends Action = Action>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Action}.
@@ -32,4 +32,4 @@ export type JouleSecond = uom.JouleSecond;
  * @category Mechanical
  * @symbol `Js`
  */
-export const JouleSecond: (value: number) => JouleSecond = brandUom<JouleSecond>;
+export const JouleSecond: (value: number) => JouleSecond = brandUom;

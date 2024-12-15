@@ -14,7 +14,7 @@ export type ElectricConductance = uom.ElectricConductance;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricConductance: (value: number) => ElectricConductance = brandUom<ElectricConductance>;
+export const ElectricConductance: <V extends ElectricConductance = ElectricConductance>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ElectricConductance}.
@@ -36,4 +36,4 @@ export type Siemens = uom.Siemens;
  * @category Electromagnetic
  * @symbol `S`
  */
-export const Siemens: (value: number) => Siemens = brandUom<Siemens>;
+export const Siemens: (value: number) => Siemens = brandUom;

@@ -14,7 +14,7 @@ export type SpectralPower = uom.SpectralPower;
  * @group Abstract Units
  * @category Mechanical
  */
-export const SpectralPower: (value: number) => SpectralPower = brandUom<SpectralPower>;
+export const SpectralPower: <V extends SpectralPower = SpectralPower>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SpectralPower}.
@@ -32,4 +32,4 @@ export type WattPerMeter = uom.WattPerMeter;
  * @category Mechanical
  * @symbol `W/m`
  */
-export const WattPerMeter: (value: number) => WattPerMeter = brandUom<WattPerMeter>;
+export const WattPerMeter: (value: number) => WattPerMeter = brandUom;

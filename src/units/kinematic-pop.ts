@@ -14,7 +14,7 @@ export type Pop = uom.Pop;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Pop: (value: number) => Pop = brandUom<Pop>;
+export const Pop: <V extends Pop = Pop>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Pop}.
@@ -32,4 +32,4 @@ export type MeterPerSecondToTheSixth = uom.MeterPerSecondToTheSixth;
  * @category Kinematic
  * @symbol `m/s⁶`
  */
-export const MeterPerSecondToTheSixth: (value: number) => MeterPerSecondToTheSixth = brandUom<MeterPerSecondToTheSixth>;
+export const MeterPerSecondToTheSixth: (value: number) => MeterPerSecondToTheSixth = brandUom;

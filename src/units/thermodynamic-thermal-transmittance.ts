@@ -14,7 +14,8 @@ export type ThermalTransmittance = uom.ThermalTransmittance;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const ThermalTransmittance: (value: number) => ThermalTransmittance = brandUom<ThermalTransmittance>;
+export const ThermalTransmittance: <V extends ThermalTransmittance = ThermalTransmittance>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link ThermalTransmittance}.
@@ -30,5 +31,4 @@ export type WattPerSquareMeterPerKelvin = uom.WattPerSquareMeterPerKelvin;
  * @group Units
  * @category Thermodynamic
  */
-export const WattPerSquareMeterPerKelvin: (value: number) => WattPerSquareMeterPerKelvin =
-  brandUom<WattPerSquareMeterPerKelvin>;
+export const WattPerSquareMeterPerKelvin: (value: number) => WattPerSquareMeterPerKelvin = brandUom;

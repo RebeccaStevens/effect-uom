@@ -14,7 +14,7 @@ export type ThermalConductivity = uom.ThermalConductivity;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const ThermalConductivity: (value: number) => ThermalConductivity = brandUom<ThermalConductivity>;
+export const ThermalConductivity: <V extends ThermalConductivity = ThermalConductivity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link ThermalConductivity}.
@@ -32,4 +32,4 @@ export type WattPerMeterKelvin = uom.WattPerMeterKelvin;
  * @category Thermodynamic
  * @symbol `W/(m⋅K)`
  */
-export const WattPerMeterKelvin: (value: number) => WattPerMeterKelvin = brandUom<WattPerMeterKelvin>;
+export const WattPerMeterKelvin: (value: number) => WattPerMeterKelvin = brandUom;

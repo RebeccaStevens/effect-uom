@@ -14,7 +14,7 @@ export type TemperatureGradient = uom.TemperatureGradient;
  * @group Abstract Units
  * @category Thermodynamic
  */
-export const TemperatureGradient: (value: number) => TemperatureGradient = brandUom<TemperatureGradient>;
+export const TemperatureGradient: <V extends TemperatureGradient = TemperatureGradient>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link TemperatureGradient}.
@@ -32,4 +32,4 @@ export type KelvinPerMeter = uom.KelvinPerMeter;
  * @category Thermodynamic
  * @symbol `K/m`
  */
-export const KelvinPerMeter: (value: number) => KelvinPerMeter = brandUom<KelvinPerMeter>;
+export const KelvinPerMeter: (value: number) => KelvinPerMeter = brandUom;

@@ -14,7 +14,7 @@ export type SolidAngle = uom.SolidAngle;
  * @group Abstract Units
  * @category Angle (Solid)
  */
-export const SolidAngle: (value: number) => SolidAngle = brandUom<SolidAngle>;
+export const SolidAngle: <V extends SolidAngle = SolidAngle>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link SolidAngle}.
@@ -42,4 +42,4 @@ export type Steradian = uom.Steradian;
  * @category Angle (Solid)
  * @symbol `sr`
  */
-export const Steradian: (value: number) => Steradian = brandUom<Steradian>;
+export const Steradian: (value: number) => Steradian = brandUom;

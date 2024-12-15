@@ -14,7 +14,7 @@ export type Snap = uom.Snap;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Snap: (value: number) => Snap = brandUom<Snap>;
+export const Snap: <V extends Snap = Snap>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Snap}.
@@ -32,5 +32,4 @@ export type MeterPerSecondToTheFourth = uom.MeterPerSecondToTheFourth;
  * @category Kinematic
  * @symbol `m/s⁴`
  */
-export const MeterPerSecondToTheFourth: (value: number) => MeterPerSecondToTheFourth =
-  brandUom<MeterPerSecondToTheFourth>;
+export const MeterPerSecondToTheFourth: (value: number) => MeterPerSecondToTheFourth = brandUom;

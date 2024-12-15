@@ -18,8 +18,7 @@ export type ElectricDisplacementField = uom.ElectricDisplacementField;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const ElectricDisplacementField: (value: number) => ElectricDisplacementField =
-  brandUom<ElectricDisplacementField>;
+export const ElectricDisplacementField: (value: number) => ElectricDisplacementField = brandUom;
 
 /**
  * A unit of {@link ElectricDisplacementField}.
@@ -37,4 +36,4 @@ export type CoulombPerSquareMeter = uom.CoulombPerSquareMeter;
  * @category Electromagnetic
  * @symbol `C/m²`
  */
-export const CoulombPerSquareMeter: (value: number) => CoulombPerSquareMeter = brandUom<CoulombPerSquareMeter>;
+export const CoulombPerSquareMeter: (value: number) => CoulombPerSquareMeter = brandUom;

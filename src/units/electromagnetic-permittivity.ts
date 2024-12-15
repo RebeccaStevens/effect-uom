@@ -14,7 +14,7 @@ export type Permittivity = uom.Permittivity;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const Permittivity: (value: number) => Permittivity = brandUom<Permittivity>;
+export const Permittivity: <V extends Permittivity = Permittivity>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Permittivity}.
@@ -32,4 +32,4 @@ export type FaradPerMeter = uom.FaradPerMeter;
  * @category Electromagnetic
  * @symbol `F/m`
  */
-export const FaradPerMeter: (value: number) => FaradPerMeter = brandUom<FaradPerMeter>;
+export const FaradPerMeter: (value: number) => FaradPerMeter = brandUom;

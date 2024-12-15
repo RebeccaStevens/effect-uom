@@ -14,7 +14,7 @@ export type Jerk = uom.Jerk;
  * @group Abstract Units
  * @category Kinematic
  */
-export const Jerk: (value: number) => Jerk = brandUom<Jerk>;
+export const Jerk: <V extends Jerk = Jerk>(value: number) => V = brandUom;
 
 /**
  * A unit of {@link Jerk}.
@@ -32,4 +32,4 @@ export type MeterPerSecondCubed = uom.MeterPerSecondCubed;
  * @category Kinematic
  * @symbol `m/s³`
  */
-export const MeterPerSecondCubed: (value: number) => MeterPerSecondCubed = brandUom<MeterPerSecondCubed>;
+export const MeterPerSecondCubed: (value: number) => MeterPerSecondCubed = brandUom;

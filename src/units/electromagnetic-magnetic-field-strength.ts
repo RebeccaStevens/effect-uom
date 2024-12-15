@@ -14,7 +14,8 @@ export type MagneticFieldStrength = uom.MagneticFieldStrength;
  * @group Abstract Units
  * @category Electromagnetic
  */
-export const MagneticFieldStrength: (value: number) => MagneticFieldStrength = brandUom<MagneticFieldStrength>;
+export const MagneticFieldStrength: <V extends MagneticFieldStrength = MagneticFieldStrength>(value: number) => V =
+  brandUom;
 
 /**
  * A unit of {@link MagneticFieldStrength}.
@@ -32,4 +33,4 @@ export type AmperePerMeter = uom.AmperePerMeter;
  * @category Electromagnetic
  * @symbol `A/m`
  */
-export const AmperePerMeter: (value: number) => AmperePerMeter = brandUom<AmperePerMeter>;
+export const AmperePerMeter: (value: number) => AmperePerMeter = brandUom;
