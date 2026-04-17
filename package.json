@@ -143,5 +143,5 @@
   "peerDependencies": {
     "effect": "^3.0.0"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "pnpm@10.33.0"
 }
