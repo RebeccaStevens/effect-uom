@@ -31,8 +31,8 @@ importers:
         specifier: 12.1.1
         version: 12.1.1(rollup@4.59.0)(tslib@2.6.3)(typescript@5.7.2)
       '@sebbo2002/semantic-release-jsr':
-        specifier: 2.0.2
-        version: 2.0.2
+        specifier: 3.2.1
+        version: 3.2.1
       '@semantic-release/changelog':
         specifier: 6.0.3
         version: 6.0.3(semantic-release@24.2.9(typescript@5.7.2))
@@ -1736,9 +1736,9 @@ packages:
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
-  '@sebbo2002/semantic-release-jsr@2.0.2':
-    resolution: {integrity: sha512-mzqiLvy0Gz0xDUu1vCp7CMb314SPdAA17WwrykOUGviUpHpTlZShkazn04lw0a0wQraPxtSucEdanu436XrLUw==}
-    engines: {node: 18 || 20 || >=22.0.0}
+  '@sebbo2002/semantic-release-jsr@3.2.1':
+    resolution: {integrity: sha512-5Xlw9TNvOsyWUUzYvvR9h7KsPAXnhjLOpZfMbLGJetItFK+fZlheV2qgJXqwSW97Vaqu0cu82ZIj8noGxyZBXA==}
+    engines: {node: 20 || >=22.0.0}
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -3757,8 +3757,8 @@ packages:
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
 
-  jsr@0.13.2:
-    resolution: {integrity: sha512-c4ir0ql2Xgpg9mSOSPKBANS9oTvlV8fSzpesCsHP04VAOJ3pBm7YygY2LVkHC0jz9G36JBGh1oiEZTWO4UyctA==}
+  jsr@0.14.3:
+    resolution: {integrity: sha512-PGxnDepx7vwJoZQe2SHbyBiFfpGwsOKmX4kn/wZZqfMafV7fjXqTxSaX6lp9QHYkSTLKkER+P/wmrZY3gVJNzg==}
     hasBin: true
 
   jsx-ast-utils@3.3.5:
@@ -3775,9 +3775,6 @@ packages:
     peerDependencies:
       '@types/node': '>=18'
       typescript: '>=5.0.4'
-
-  kolorist@1.8.0:
-    resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
 
   language-subtag-registry@0.3.23:
     resolution: {integrity: sha512-0K65Lea881pHotoGEa5gDlMxt3pctLi2RplBb7Ezh4rRdLEOtgi7n4EwK9lamnUCkKBqaeKRVebTq6BAxSkpXQ==}
@@ -6860,9 +6857,10 @@ snapshots:
   '@rtsao/scc@1.1.0':
     optional: true
 
-  '@sebbo2002/semantic-release-jsr@2.0.2':
+  '@sebbo2002/semantic-release-jsr@3.2.1':
     dependencies:
-      jsr: 0.13.2
+      '@semantic-release/error': 4.0.0
+      jsr: 0.14.3
 
   '@sec-ant/readable-stream@0.4.1': {}
 
@@ -9324,9 +9322,8 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  jsr@0.13.2:
+  jsr@0.14.3:
     dependencies:
-      kolorist: 1.8.0
       node-stream-zip: 1.15.0
       semiver: 1.1.0
 
@@ -9361,8 +9358,6 @@ snapshots:
       typescript: 5.7.2
       zod: 3.23.8
       zod-validation-error: 3.3.1(zod@3.23.8)
-
-  kolorist@1.8.0: {}
 
   language-subtag-registry@0.3.23:
     optional: true
