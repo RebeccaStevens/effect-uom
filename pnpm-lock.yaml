@@ -190,8 +190,8 @@ importers:
         specifier: 0.27.4
         version: 0.27.4(typescript@5.7.2)
       typedoc-plugin-coverage:
-        specifier: 3.4.0
-        version: 3.4.0(typedoc@0.27.4(typescript@5.7.2))
+        specifier: 4.0.3
+        version: 4.0.3(typedoc@0.27.4(typescript@5.7.2))
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -5306,11 +5306,11 @@ packages:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
 
-  typedoc-plugin-coverage@3.4.0:
-    resolution: {integrity: sha512-I8fLeQEERncGn4sUlGZ+B1ehx4L7VRwqa3i6AP+PFfvZK0ToXBGkh9sK7xs8l8FLPXq7Cv0yVy4YCEGgWNzDBw==}
+  typedoc-plugin-coverage@4.0.3:
+    resolution: {integrity: sha512-baim3wyMkqpX7rBzL/6iZ7wzKJuSr9ffP16RHOsdTUNoHUZeXLIZHSUBtUhXmNHaUNRgfqdmKLBwyggbJjGdeQ==}
     engines: {node: '>= 18'}
     peerDependencies:
-      typedoc: 0.25.x || 0.26.x || 0.27.x
+      typedoc: 0.28.x
 
   typedoc@0.27.4:
     resolution: {integrity: sha512-wXPQs1AYC2Crk+1XFpNuutLIkNWleokZf1UNf/X8w9KsMnirkvT+LzxTXDvfF6ug3TSLf3Xu5ZXRKGfoXPX7IA==}
@@ -11059,7 +11059,7 @@ snapshots:
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
 
-  typedoc-plugin-coverage@3.4.0(typedoc@0.27.4(typescript@5.7.2)):
+  typedoc-plugin-coverage@4.0.3(typedoc@0.27.4(typescript@5.7.2)):
     dependencies:
       typedoc: 0.27.4(typescript@5.7.2)
 
