@@ -138,7 +138,7 @@
     "typescript": "6.0.3",
     "vite-tsconfig-paths": "6.1.1",
     "vitest": "3.2.4",
-    "yaml-eslint-parser": "1.2.3"
+    "yaml-eslint-parser": "2.0.0"
   },
   "peerDependencies": {
     "effect": "^3.0.0"
