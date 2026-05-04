@@ -99,7 +99,7 @@
     "cz-conventional-changelog": "3.3.0",
     "effect": "^3.0.0",
     "effect-uom": "link:.",
-    "eslint": "9.39.4",
+    "eslint": "10.3.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-flat-config-utils": "0.4.0",
     "eslint-import-resolver-typescript": "4.4.4",
