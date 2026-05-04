@@ -136,7 +136,7 @@
     "typedoc": "0.27.4",
     "typedoc-plugin-coverage": "4.0.3",
     "typescript": "6.0.3",
-    "vite-tsconfig-paths": "5.1.4",
+    "vite-tsconfig-paths": "6.1.1",
     "vitest": "3.2.4",
     "yaml-eslint-parser": "1.2.3"
   },
