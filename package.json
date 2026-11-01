@@ -97,7 +97,7 @@
     "commitizen": "4.3.1",
     "cspell": "8.19.4",
     "cz-conventional-changelog": "3.3.0",
-    "effect": "^3.0.0",
+    "effect": "^3.0.0 || ^4.0.0",
     "effect-uom": "link:.",
     "eslint": "9.39.5",
     "eslint-config-prettier": "10.1.8",
@@ -141,7 +141,7 @@
     "yaml-eslint-parser": "2.0.0"
   },
   "peerDependencies": {
-    "effect": "^3.0.0"
+    "effect": "^3.0.0 || ^4.0.0"
   },
   "packageManager": "pnpm@10.33.0"
 }

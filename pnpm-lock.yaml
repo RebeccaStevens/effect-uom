@@ -79,7 +79,7 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(typescript@6.0.3)
       effect:
-        specifier: ^3.0.0
+        specifier: ^3.0.0 || ^4.0.0
         version: 3.20.0
       effect-uom:
         specifier: link:.
